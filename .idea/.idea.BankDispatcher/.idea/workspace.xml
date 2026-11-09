@@ -6,12 +6,25 @@
     <projectFile profileName="BankDispatcher.Workers">BankDispatcher.Workers/BankDispatcher.Workers.csproj</projectFile>
     <projectFile>BankDispatcher/BankDispatcher.csproj</projectFile>
   </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="CMakeProjectFlavorService">
+    <option name="flavorId" value="CMakePlainProjectFlavor" />
+  </component>
+  <component name="CMakeSettings">
+    <configurations />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="f18c649e-e4d2-4783-be95-13ec2fff3b72" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BankDispatcher.sln" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BankDispatcher/BankDispatcher.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BankDispatcher/Events/TransacaoEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BankDispatcher.Api/Controllers/TransactionController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BankDispatcher.Api/DTOs/CreateTransactionRequest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BankDispatcher.Api/Services/IRabbitMqPublisher.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BankDispatcher.Api/Services/RabbitMqPublisher.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.BankDispatcher/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BankDispatcher/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BankDispatcher.Api/BankDispatcher.Api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/BankDispatcher.Api/BankDispatcher.Api.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BankDispatcher/BankDispatcher.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/BankDispatcher/BankDispatcher.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BankDispatcher/Events/TransacaoEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BankDispatcher/Events/TransactionEvent.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +33,71 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/BankDispatcher.Api/Controllers/TransactionController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BankDispatcher.Api/DTOs/CreateTransactionRequest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BankDispatcher.Api/Services/IRabbitMqPublisher.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BankDispatcher.Api/Services/RabbitMqPublisher.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0136680249721821" />
+      <entry key="MS500" value="1.7378584648910835" />
+      <entry key="S2" value="3.0999013035990517" />
+      <entry key="S5" value="5.767184045959282" />
+      <entry key="S10" value="8.838383002790273" />
+      <entry key="S30" value="13.603435949640785" />
+      <entry key="S60" value="15.626740342754893" />
+      <entry key="M2" value="18.17753173494456" />
+      <entry key="M5" value="30.656608544980166" />
+      <entry key="M10" value="55.713569921450265" />
+      <entry key="M15" value="75.24873227218812" />
+      <entry key="M30" value="107.33740373567089" />
+      <entry key="H1" value="130.69071760702354" />
+      <entry key="H2" value="144.85270616992264" />
+      <entry key="H4" value="152.66084495149653" />
+      <entry key="D1" value="159.57169150704814" />
+      <entry key="W1" value="160.7949930814592" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="1.4115245905309758E-66" />
+      <entry key="MS500" value="6.759859815035268E-14" />
+      <entry key="S2" value="5.098993078258854E-4" />
+      <entry key="S5" value="0.04819408829399817" />
+      <entry key="S10" value="0.21953152004668128" />
+      <entry key="S30" value="0.603278874883153" />
+      <entry key="S60" value="0.7818515984207028" />
+      <entry key="M2" value="0.9531242358426765" />
+      <entry key="M5" value="1.2994555249094784" />
+      <entry key="M10" value="1.5655890498597496" />
+      <entry key="M15" value="1.6871779916221497" />
+      <entry key="M30" value="1.830589782648145" />
+      <entry key="H1" value="1.9117544844760426" />
+      <entry key="H2" value="1.954952964427264" />
+      <entry key="H4" value="1.9772403256389581" />
+      <entry key="D1" value="1.9961734804949776" />
+      <entry key="W1" value="1.9994525344925584" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.9342520596344693" />
+      <entry key="MS500" value="1.5952655781342886" />
+      <entry key="S2" value="3.0164790172614575" />
+      <entry key="S5" value="5.764685540744588" />
+      <entry key="S10" value="9.015204269742553" />
+      <entry key="S30" value="14.180507196474208" />
+      <entry key="S60" value="16.391943928372218" />
+      <entry key="M2" value="19.115915605657946" />
+      <entry key="M5" value="31.940581268685253" />
+      <entry key="M10" value="57.267066425488196" />
+      <entry key="M15" value="76.9264049350258" />
+      <entry key="M30" value="109.16233120497658" />
+      <entry key="H1" value="132.59936741126347" />
+      <entry key="H2" value="146.80603136483808" />
+      <entry key="H4" value="154.6372515548372" />
+      <entry key="D1" value="161.56772319024978" />
+      <entry key="W1" value="162.79442528836788" />
+    </decayedShown>
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 5,
@@ -40,7 +118,7 @@
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "cidr.known.project.marker": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
