@@ -1,7 +1,10 @@
-using BankDispatcher.Workers;
+using BankDispatcher.Workers.Workers;
 
 var builder = Host.CreateApplicationBuilder(args);
-builder.Services.AddHostedService<Worker>();
+
+builder.Services.AddHostedService<AuditWorker>();
+builder.Services.AddHostedService<AntiFraudWorker>();
 
 var host = builder.Build();
-host.Run();
+
+await host.RunAsync();
